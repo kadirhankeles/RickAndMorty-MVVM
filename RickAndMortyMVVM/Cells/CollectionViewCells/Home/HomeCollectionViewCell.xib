@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="MVVMDeneme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="516"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="516"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-sr-9lb">
+                        <rect key="frame" x="10" y="10" width="396" height="496"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-Kh-TXZ">
+                                <rect key="frame" x="0.0" y="0.0" width="396" height="396"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TPI-Kh-TXZ" secondAttribute="height" multiplier="1:1" id="QMa-I2-4Ah"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3od-Lt-Llb">
+                                <rect key="frame" x="0.0" y="396" width="396" height="100"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="0.20992860099337748" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3od-Lt-Llb" firstAttribute="leading" secondItem="rYV-sr-9lb" secondAttribute="leading" id="88D-zg-DMf"/>
+                            <constraint firstAttribute="trailing" secondItem="TPI-Kh-TXZ" secondAttribute="trailing" id="9SQ-q8-m57"/>
+                            <constraint firstItem="TPI-Kh-TXZ" firstAttribute="leading" secondItem="rYV-sr-9lb" secondAttribute="leading" id="GDJ-PD-kam"/>
+                            <constraint firstAttribute="trailing" secondItem="3od-Lt-Llb" secondAttribute="trailing" id="VpJ-Nd-uEz"/>
+                            <constraint firstItem="3od-Lt-Llb" firstAttribute="top" secondItem="TPI-Kh-TXZ" secondAttribute="bottom" id="nIg-ln-q5B"/>
+                            <constraint firstItem="TPI-Kh-TXZ" firstAttribute="centerX" secondItem="rYV-sr-9lb" secondAttribute="centerX" id="qHv-sK-dtW"/>
+                            <constraint firstItem="TPI-Kh-TXZ" firstAttribute="top" secondItem="rYV-sr-9lb" secondAttribute="top" id="vLb-fz-Y0p"/>
+                            <constraint firstAttribute="bottom" secondItem="3od-Lt-Llb" secondAttribute="bottom" id="wM4-iE-aE6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rYV-sr-9lb" secondAttribute="trailing" constant="10" id="2vt-gn-YCp"/>
+                <constraint firstItem="rYV-sr-9lb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bYf-bb-LKu"/>
+                <constraint firstAttribute="bottom" secondItem="rYV-sr-9lb" secondAttribute="bottom" constant="10" id="l7W-rS-Gdn"/>
+                <constraint firstItem="rYV-sr-9lb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="liP-pn-TKs"/>
+            </constraints>
+            <size key="customSize" width="505" height="621"/>
+            <connections>
+                <outlet property="characterImage" destination="TPI-Kh-TXZ" id="j0U-2x-wZG"/>
+                <outlet property="nameLabel" destination="3od-Lt-Llb" id="1gG-5B-50q"/>
+            </connections>
+            <point key="canvasLocation" x="673.28244274809163" y="211.26760563380282"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="a" width="843" height="505"/>
+    </resources>
+</document>
